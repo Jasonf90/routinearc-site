@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RoutineArc — Privacy Policy</title>
+<meta name="description" content="How RoutineArc handles your information: offline-first, no account, no tracking.">
+<style>
+  :root {
+    --ground:#fff; --ink:#14171d; --ink-2:#454c59; --ink-3:#6b7385;
+    --rule:#e3e6ec; --accent:#4f46e5; --chip:#f3f4f8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --ground:#0f1216; --ink:#e9edf3; --ink-2:#b4bcc9; --ink-3:#8a93a3;
+            --rule:#262c36; --accent:#8ea2f7; --chip:#1a1f27; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;padding:0 20px 80px;background:var(--ground);color:var(--ink);
+    font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    -webkit-text-size-adjust:100%}
+  main{max-width:720px;margin:0 auto}
+  header{padding:56px 0 26px;border-bottom:2px solid var(--ink)}
+  h1{margin:0;font-size:clamp(30px,6vw,40px);letter-spacing:-.02em;line-height:1.1}
+  .sub{margin:12px 0 0;color:var(--ink-2);font-size:18px}
+  .meta{margin-top:16px;color:var(--ink-3);font-size:14px}
+  nav{margin-top:18px;font-size:15px}
+  nav a{color:var(--accent);text-decoration:none;margin-right:16px}
+  nav a:hover{text-decoration:underline}
+  section{padding:26px 0;border-bottom:1px solid var(--rule)}
+  h2{margin:0 0 10px;font-size:20px;letter-spacing:-.01em}
+  h3{margin:22px 0 8px;font-size:17px}
+  p{margin:0 0 12px;color:var(--ink-2)}
+  p:last-child{margin-bottom:0}
+  ol,ul{margin:0 0 12px;padding-left:22px;color:var(--ink-2)}
+  li{margin:0 0 6px}
+  .note{background:var(--chip);border-radius:8px;padding:10px 13px;font-size:15px;
+    color:var(--ink-2);margin:0 0 10px}
+  a{color:var(--accent)}
+  footer{padding:26px 0 0;color:var(--ink-3);font-size:14px}
+  footer p{color:var(--ink-3)}
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Privacy Policy</h1>
+    <p class="sub">RoutineArc is offline-first and privacy-first. This page describes everything the app does — and deliberately does not do — with your information.</p>
+    <p class="meta">Effective 2026-08-28 · Applies to the RoutineArc app for iPhone</p>
+    <nav><a href="./index.html">Overview</a><a href="./guide.html">User guide</a></nav>
+  </header>
+
+  <section>
+    <h2>Your data stays on your device</h2>
+    <p>RoutineArc stores every task, event, and note in an on-device SQLite database. There is no account and no cloud sync, and nothing you write is uploaded to us — we run no server to upload it to.</p>
+    <p>Your content leaves the device only in the specific cases described below, and each one is either optional or something you start yourself: optional address lookup, opening a map, and exporting a backup.</p>
+  </section>
+
+  <section>
+    <h2>Microphone</h2>
+    <p>Microphone access is used solely to convert your speech into tasks, events, and notes while you are using voice capture. Speech recognition runs on-device through iOS's own speech framework, and your audio is not sent to us. If you have enabled Siri's server-based dictation system-wide, iOS may process speech on Apple's servers under Apple's privacy policy — that is a system setting, not something RoutineArc requests or receives.</p>
+  </section>
+
+  <section>
+    <h2>Camera &amp; text scanning</h2>
+    <p>If you scan an image, the camera/photo access is used only to capture that image, and text recognition (OCR) runs entirely on-device via Apple's Vision framework. Images and recognized text are never uploaded or stored beyond the task/event you create.</p>
+  </section>
+
+  <section>
+    <h2>Location</h2>
+    <p>If you grant location access, RoutineArc uses it only to estimate drive time to tasks and events that have a location. That estimate is computed entirely on your device — no routing or traffic service is contacted, and your coordinates are never recorded, stored, or transmitted.</p>
+    <p>Looking up an address is a separate, optional feature. Apple's geocoder is network-backed, so enabling it sends the address you typed — or, for "use my current location", your coordinates — to the system geocoding service and OpenStreetMap Nominatim. It is OFF by default, and you can turn it on in Settings. Saved places store their coordinates once, so drive time keeps working with it off. Location is optional throughout.</p>
+  </section>
+
+  <section>
+    <h2>On-device AI</h2>
+    <p>AI features (day planning, note summaries, voice parsing) run entirely on your iPhone through Apple Intelligence, which is built into iOS and runs on the device's Neural Engine. There is no model to download and nothing to sign in to. Your content is never sent to a server for processing. If Apple Intelligence is unavailable on your device, RoutineArc falls back to a deterministic rules engine that also runs entirely on-device.</p>
+  </section>
+
+  <section>
+    <h2>No third-party analytics</h2>
+    <p>RoutineArc adds no analytics, tracking, or crash reporting, and embeds no third-party advertising or analytics SDKs. The system frameworks it uses — Vision for text recognition, Core Location for location, and Apple Intelligence for AI — are part of iOS and are governed by Apple’s own privacy policy. We do not receive any data from them.</p>
+  </section>
+
+  <section>
+    <h2>Notifications</h2>
+    <p>Reminder notifications are scheduled locally on your device. No notification content leaves your phone.</p>
+  </section>
+
+  <section>
+    <h2>Export is in your hands</h2>
+    <p>The only way to take your data OUT in bulk is Export data in Settings, which hands a JSON copy to the app you choose via the iOS share sheet.</p>
+  </section>
+
+  <section>
+    <h2>Data collection</h2>
+    <p>RoutineArc collects no personal data. There is no account, no analytics, no advertising identifier, and no tracking across apps or websites. We operate no server that receives your content.</p>
+  </section>
+
+  <section>
+    <h2>Children</h2>
+    <p>RoutineArc is not directed at children and collects no personal information from anyone, including children.</p>
+  </section>
+
+  <section>
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes, the revised version is published at this address with a new effective date.</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Questions about this policy: <a href="mailto:CONTACT_EMAIL_HERE">CONTACT_EMAIL_HERE</a></p>
+  </section>
+
+  <footer>
+    <p>Generated from the same source as the policy shown inside the app, so the two cannot disagree.</p>
+  </footer>
+</main>
+</body>
+</html>
