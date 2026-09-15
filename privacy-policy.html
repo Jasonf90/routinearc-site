@@ -45,14 +45,14 @@
   <header>
     <h1>Privacy Policy</h1>
     <p class="sub">RoutineArc is offline-first and privacy-first. This page describes everything the app does — and deliberately does not do — with your information.</p>
-    <p class="meta">Effective 2026-08-31 · Applies to the RoutineArc app for iPhone</p>
+    <p class="meta">Effective 2026-09-15 · Applies to the RoutineArc app for iPhone</p>
     <nav><a href="./index.html">Overview</a><a href="./guide.html">User guide</a></nav>
   </header>
 
   <section>
     <h2>Your data stays on your device</h2>
     <p>RoutineArc stores every task, event, and note in an on-device SQLite database. There is no account and no cloud sync, and nothing you write is uploaded to us — we run no server to upload it to.</p>
-    <p>Your content leaves the device only in the specific cases described below, and each one is either optional or something you start yourself: optional address lookup, opening a map, exporting a backup, and buying or restoring an unlock through the App Store.</p>
+    <p>Your content leaves the device only in the specific cases described below, and each one is either optional or something you start yourself: optional address lookup, dictation you explicitly allow Apple to transcribe, opening a map, exporting a backup, sharing a PDF you exported, and buying or restoring an unlock through the App Store.</p>
   </section>
 
   <section>
@@ -67,8 +67,9 @@
 
   <section>
     <h2>Location</h2>
-    <p>If you grant location access, RoutineArc uses it only to estimate drive time to tasks and events that have a location. That estimate is computed entirely on your device — no routing or traffic service is contacted, and your coordinates are never recorded, stored, or transmitted.</p>
-    <p>Looking up an address is a separate, optional feature. Apple's geocoder is network-backed, so enabling it sends the address you typed — or, for "use my current location", your coordinates — to the system geocoding service and OpenStreetMap Nominatim. It is OFF by default, and you can turn it on in Settings. Saved places store their coordinates once, so drive time keeps working with it off. Location is optional throughout.</p>
+    <p>If you grant location access, RoutineArc uses it to estimate drive time to tasks and events that have a location. That estimate is computed entirely on your device — no routing or traffic service is contacted, and the position it reads is used for the calculation and then discarded.</p>
+    <p>Position is kept or sent in a few places, all of them things you tap. Saving a place with "use my current location" stores its coordinates with that place, on this device, so the drive-time estimate has something to measure to; deleting the place deletes them. Tapping the crosshair in a task or an event stores your position on that item in the same way. An event you gave an address to has that address looked up once, in the background, while address lookup is on, and the result is stored with the event. And address lookup itself, described next, can send a position off the device.</p>
+    <p>Looking up an address is a separate, optional feature. Apple's geocoder is network-backed, so enabling it sends the address you typed to the system geocoding service. Pinning "use my current location" sends your coordinates to the same system geocoder. Nothing is sent to any other company: an address the system geocoder cannot find simply does not resolve. It is OFF by default, and you can turn it on in Settings. Saved places store their coordinates once, so drive time keeps working with it off. Location is optional throughout.</p>
   </section>
 
   <section>
@@ -83,9 +84,9 @@
 
   <section>
     <h2>Buying and restoring</h2>
-    <p>RoutineArc is free for seven days, after which capturing new items needs a one-time unlock or a yearly subscription. Purchases go through the App Store, so your payment details are handled entirely by Apple and are never seen by this app.</p>
+    <p>RoutineArc is free for seven days, after which capturing or changing items needs a one-time unlock or a yearly subscription. Purchases go through the App Store, so your payment details are handled entirely by Apple and are never seen by this app.</p>
     <p>What RoutineArc learns is one thing: whether the Apple Account on this device holds an unlock. Not your name, not your Apple Account address, not a payment method, and not what else you have bought. That check runs on the device itself — there is still no RoutineArc account and no server of ours involved.</p>
-    <p>The seven days are counted from the date the App Store records for your first download of the app, which is read on the device and not stored anywhere else.</p>
+    <p>The seven days are counted from whichever is earlier: the date the App Store records for your first download, or the first time you opened the app. Both are read on the device and not stored anywhere else.</p>
   </section>
 
   <section>
@@ -95,7 +96,7 @@
 
   <section>
     <h2>Export is in your hands</h2>
-    <p>The only way to take your data OUT in bulk is Export data in Settings, which hands a JSON copy to the app you choose via the iOS share sheet.</p>
+    <p>Data leaves in bulk only when you send it: Export data in Settings hands a JSON copy to the app you choose via the iOS share sheet, and each saved backup has its own Share button that does the same with that snapshot. Nothing is sent anywhere you did not pick.</p>
   </section>
 
   <section>

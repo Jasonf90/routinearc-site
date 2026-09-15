@@ -82,14 +82,6 @@
     <p class="note">A photo of a card stays one item. A photo of a bulleted list becomes one item per bullet.</p>
     <p class="note">If the photo has no readable text, RoutineArc says so rather than closing silently.</p>
 
-    <h3>Capture a photo that has no text</h3>
-    <p>For a whiteboard sketch, a parking bay or anything worth remembering the look of, the on-device model can describe the picture and file the description.</p>
-    <ol>
-      <li>Turn on Settings → AI → "Describe photos".</li>
-      <li>Tap the + button on Today, then "Describe photo", and choose Camera or Library.</li>
-    </ol>
-    <p class="note">The option only appears when the selected AI provider can actually describe images, so it is never offered where it would fail.</p>
-
     <h3>Start a task from a picture</h3>
     <p>Keeps the picture itself rather than reading it — the shelf you need to match, the form you have to fill in, the parking bay you left the car in.</p>
     <ol>
@@ -97,7 +89,7 @@
       <li>Choose Camera or Library.</li>
       <li>The task opens with the picture already attached; give it a title and save.</li>
     </ol>
-    <p class="note">Different from "Scan text (OCR)", which pulls the words out and throws the picture away, and from "Describe photo", which writes a description of it.</p>
+    <p class="note">Different from "Scan text (OCR)", which pulls the words out and throws the picture away — this one keeps the picture.</p>
 
     <h3>Plan my day</h3>
     <p>Turns your events and open tasks into an order of work, fitting tasks around fixed commitments and leaving room for travel.</p>
@@ -114,8 +106,11 @@
       <li>Open a task and tap a priority, or say it when you capture ("p2 renew the passport").</li>
       <li>Turn on "Eat That Frog" to mark the single most important task of the day; it pins to the top of Today.</li>
       <li>On the Tasks tab, switch to the matrix view to see all four quadrants and drag a task between them.</li>
+      <li>Inside a task, "Urgent" and "Important" are separate switches under EISENHOWER QUADRANT. Setting the P number moves both switches; moving the switches does NOT change the P number.</li>
+      <li>The purple On Deck card in Today's Priorities section is whichever task the app thinks is next. Tap it to open the On Deck screen and work through them one at a time — that card is the only way in, so keep the Priorities section shown if you use it.</li>
     </ol>
-
+    <p class="note">Priority and quadrant are the same fact shown two ways, but only priority drives the pair. To change both at once, drag the task between quadrants in the matrix view on the Tasks tab.</p>
+    <p class="note">Only one task can be the frog at a time. Marking a second moves the badge.</p>
 
     <h3>Make something repeat</h3>
     <p>Tasks and events can repeat daily, weekly, monthly, quarterly, or on a custom interval.</p>
@@ -131,19 +126,23 @@
     <ol>
       <li>Open the Focus tab and pick Pomodoro, Timer or Stopwatch.</li>
       <li>Or start focus straight from a task, which preloads a sensible length.</li>
-      <li>Turn on Strict Mode if you want leaving the app to fail the run.</li>
+      <li>In Pomodoro, turn on Strict Mode if you want leaving the app to fail the run. It is not offered on the plain timer or the stopwatch.</li>
+      <li>In Pomodoro, turn on Ambient Sound for background noise while it runs.</li>
+      <li>On the stopwatch, each lap collects under Lap History.</li>
     </ol>
 
 
     <h3>Clear the backlog: triage, weekly review, Keep It Honest, On Deck</h3>
     <p>Four different ways of dealing with what did not get done, each suited to a different mood.</p>
     <ol>
-      <li>Evening Triage: swipe overdue tasks — right to roll over, left to delete, down to complete.</li>
-      <li>Weekly Review: the same swipe deck over your backlog, to schedule or drop things.</li>
+      <li>Evening Triage, for tasks whose due date has already passed: swipe RIGHT for Rollover, which brings it forward to today, DOWN to Complete it, LEFT to Delete it.</li>
+      <li>Weekly Review, for the wider backlog: swipe RIGHT to schedule it, LEFT to leave it alone, DOWN to delete it. The directions are NOT the same as Triage — see the note below.</li>
       <li>Keep It Honest: for tasks that keep slipping. Each one must be done, deferred, delegated or deleted.</li>
       <li>On Deck: one task at a time, with a timer, when everything feels like too much.</li>
+      <li>Both decks show buttons on every card as well, so you never have to swipe if you would rather tap.</li>
     </ol>
-
+    <p class="note">THE TWO DECKS DISAGREE. In Triage, swiping left deletes; in Weekly Review it only leaves the task alone. Swiping down completes in Triage but deletes in Weekly Review. Read the label on the card before you fling it — a habit learned in one deck will destroy a task in the other.</p>
+    <p class="note">Triage and Weekly Review are prompted at times you choose under Settings → Planner.</p>
 
     <h3>Save places and get "leave by" times</h3>
     <p>Store the places you go often and RoutineArc works out when you need to set off.</p>
@@ -157,7 +156,7 @@
     <h3>Tell it when you work</h3>
     <p>Your shifts shape the plan: work tasks are scheduled inside them, and the calendar shows them as bands behind your events.</p>
     <ol>
-      <li>Go to Settings → AI → Work Schedule, or More → Saved Places → Work schedule.</li>
+      <li>Go to Settings → AI → Work Schedule, or tap "Edit work schedule" on the Calendar.</li>
       <li>Add a shift with its date, times and location.</li>
       <li>Set it to repeat, and how many months ahead to project it.</li>
     </ol>
@@ -166,7 +165,7 @@
     <h3>Manage what the AI remembers</h3>
     <p>RoutineArc picks up facts about you — where the gym is, that you prefer mornings — and uses them when it files new things.</p>
     <ol>
-      <li>Open More → AI Memory to read, edit or delete anything it knows.</li>
+      <li>Open Settings → AI → AI Memory to read, edit or delete anything it knows.</li>
       <li>Use "Tell it something" to add a fact yourself.</li>
       <li>Turn "Learn facts automatically" off in Settings → AI if you would rather confirm each one.</li>
     </ol>
@@ -181,18 +180,18 @@
     </ol>
     <p class="note">If Apple Intelligence is off or still preparing, RoutineArc runs the rules engine meanwhile and switches over when it becomes available.</p>
 
-    <h3>Turn on reminders and the status notification</h3>
+    <h3>Turn on reminders and the Live Activity</h3>
     <p>Reminders are off until you ask for them.</p>
     <ol>
       <li>Open Settings → Alerts.</li>
       <li>Turn on Local Reminders.</li>
-      <li>Optionally turn on the status notification, which keeps your current task on the lock screen.</li>
+      <li>Optionally turn on "Live Activity", which puts the current block on the lock screen and Dynamic Island.</li>
       <li>Set sound and vibration separately for timers and reminders.</li>
     </ol>
     <p class="note">If reminders ever stop being scheduled — usually because notification permission was revoked — RoutineArc tells you once rather than failing quietly.</p>
 
     <h3>Put RoutineArc on your home screen</h3>
-    <p>Four widgets: Home, Tasks, Priority Matrix and Day Briefing.</p>
+    <p>Five widgets: Home, Tasks, Priority Matrix, Day Briefing and Day Overview.</p>
     <ol>
       <li>Turn on Settings → Alerts → "Background widget updates".</li>
       <li>Touch and hold the Home Screen, tap Edit → Add Widget, and find RoutineArc.</li>
@@ -201,14 +200,15 @@
     <p class="note">Widget updates are off by default because they cost a little battery.</p>
 
     <h3>Try RoutineArc, then unlock it</h3>
-    <p>RoutineArc is free to use for seven days. After that it keeps everything you already have and stops accepting new items until you unlock it.</p>
+    <p>RoutineArc is free to use for seven days. After that it keeps everything you already have and stops accepting new items, and editing existing ones until you unlock it.</p>
     <ol>
       <li>Use it normally for the first seven days — nothing to sign up for, and no card.</li>
-      <li>When the days run out, open Settings → System → RoutineArc Unlimited, or tap the capture bar.</li>
+      <li>Three ways in, whenever you like: the row at the top of Today, the first row of More, or Settings → System.</li>
       <li>Choose the yearly subscription or the one-time lifetime unlock.</li>
       <li>On a new phone, tap Restore purchases — the unlock follows your Apple Account, not the device.</li>
+      <li>When the week ends, RoutineArc explains what changed once, and never asks again.</li>
     </ol>
-    <p class="note">Read-only does not mean locked out. Everything stays readable, searchable and exportable, you can still tick tasks off, and you can still delete whatever you like.</p>
+    <p class="note">Read-only does not mean locked out. Everything stays readable, searchable and exportable, you can still tick tasks and events off, defer what you cannot get to, and delete whatever you like.</p>
     <p class="note">There is no account. The purchase is between you and the App Store; RoutineArc only ever learns whether this Apple Account holds an unlock.</p>
 
     <h3>Back up, restore and import</h3>
@@ -234,93 +234,206 @@
     <h2>Every screen</h2>
     <p>One entry per screen, for when you want to know what a control does.</p>
     <h3>Today</h3>
-    <p>The hub: greeting and clock, the AI backend badge, a progress ring, the quick-add bar, one review prompt at a time, your chosen sections, and the AI Day Plan panel. The gear opens Settings.</p>
-
-
+    <p>The screen the app opens on. Top to bottom: how long is left of your free week, the date and how many tasks you have finished, the capture bar, your priorities, today's events, and the AI day plan.</p>
+    <ol>
+      <li>Type into the bar that says "Add task, event, or note..." to capture anything. It works out whether you meant a task, an event or a note.</li>
+      <li>Under Priorities, the purple card is On Deck — the single thing to do next. Tap it to open the On Deck screen, where you work through them one at a time.</li>
+      <li>A task marked TODAY'S MIT is your “eat that frog” task, pinned to the top until it is done.</li>
+      <li>Tap the circle to the left of any task to complete it. Tap the row itself to open it.</li>
+      <li>Tap "Plan my day" to have the AI build a schedule around the events you already have.</li>
+      <li>Tap "Schedule backlog tasks into today’s free time" to fit undated work into the gaps between events.</li>
+      <li>Tap "Export plan to PDF" to share the plan, and "Customize" to choose which of these sections appear at all.</li>
+      <li>Tap the gear, top right, for Settings.</li>
+    </ol>
+    <p class="note">Most of this screen is optional: "Customize" can hide any section you do not use. The AI day plan is the exception — it is pinned, and shows a padlock there rather than a switch.</p>
+    <p class="note">The row at the very top shows the trial countdown while it is running; the unlock card in Settings → System shows the same count.</p>
 
     <h3>Tasks</h3>
-    <p>Your whole backlog. Search, filter by priority or scope, switch between list and the Eisenhower matrix, and select several at once to share them as a PDF. Swipe a task to complete or delete it.</p>
-
-
+    <p>Every task you have, as a list or as the Eisenhower matrix. The list can be ordered by priority or grouped by tag.</p>
+    <ol>
+      <li>Use "Search tasks…" to find something by title.</li>
+      <li>The first row of chips filters by area — All, Work or Personal.</li>
+      <li>The second row filters by state — Active, P1, P2, P3, P4 or Done.</li>
+      <li>Tap "Toggle sort" to switch between priority order and grouping by tag. In both, the P number orders them first; between two tasks of the same priority, overdue comes before dated, and undated goes last.</li>
+      <li>Top right: a checkbox to start selecting tasks, a toggle between the list and the four-quadrant matrix, the sort toggle, and + to add.</li>
+      <li>In the matrix, drag a task between quadrants to change whether it is urgent, important, both or neither.</li>
+      <li>To export, tap the checkbox to start selecting, choose the tasks you want, then tap "Share PDF". The export is what you selected, not what the filters show.</li>
+    </ol>
+    <p class="note">The filters combine. "Work" plus "P1" shows only urgent, important work tasks.</p>
+    <p class="note">The matrix is the fastest way to re-prioritise several tasks at once, because moving a card sets both flags in one gesture.</p>
 
     <h3>Calendar</h3>
-    <p>Day and week views over an hour grid, with a line showing now. Drag an event to reschedule it. Work shifts appear as bands behind your events; tap one to edit your schedule.</p>
-
-
+    <p>Your events on a timeline, by day or by week, with your working hours shaded in.</p>
+    <ol>
+      <li>Use "Day" and "Week" at the top right to change the span.</li>
+      <li>Tap the arrows either side of the date to move backwards and forwards.</li>
+      <li>Tap "Add event" to create one, or tap any block to open it.</li>
+      <li>Tap "Edit work schedule" to change which hours are shaded as work.</li>
+    </ol>
+    <p class="note">A red line marks the current time on the day view.</p>
+    <p class="note">Events with a place show it under the title, and opening one gives you "Navigate".</p>
 
     <h3>Events</h3>
-    <p>A date strip with dots for busy days, that day's events, and everything upcoming. Recurring events are expanded into their occurrences.</p>
-
+    <p>A plain list of every event, and the screen for editing one.</p>
+    <ol>
+      <li>Tap an event to open it, then "Edit" to change anything.</li>
+      <li>Set "Start" and the end time, or turn on "All day" to drop the times entirely.</li>
+      <li>Under REMINDER, choose how long before the event you want to be told.</li>
+      <li>Under REPEAT, make it recur — daily, weekly, monthly, or a custom interval.</li>
+      <li>Under LOCATION, type a place or pick a saved one. "Navigate" opens it in Maps.</li>
+      <li>Tap "Save" to keep the changes, or "Delete Event" to remove it.</li>
+    </ol>
 
 
     <h3>Notes</h3>
-    <p>A grid of note cards. Long-press one for AI Summarize, which can also pull events and tasks out of the text and add them with a tap.</p>
-
+    <p>Anything that is not a task or an event — with an AI summary when a note gets long.</p>
+    <ol>
+      <li>Tap "Add note" to write one, or tap a note to open it.</li>
+      <li>Use "Search notes…" to find one by title or content.</li>
+      <li>On a long note, the AI offers a summary at the top. Tap "Dismiss summary" to hide it.</li>
+      <li>Tap "Save" to keep it. The X closes the editor without saving, so save before you leave.</li>
+    </ol>
 
 
     <h3>Focus</h3>
-    <p>Pomodoro, Timer and Stopwatch, with lap history on the stopwatch and an ambient rain sound. Every session is recorded.</p>
-
-
+    <p>Three timers — Pomodoro, a plain countdown, and a stopwatch — with a history of what you finished.</p>
+    <ol>
+      <li>Pick "Pomodoro", "Timer" or "Stopwatch" at the top.</li>
+      <li>For Pomodoro, set "Focus (mins)" and "Break (mins)" under Pomodoro Settings.</li>
+      <li>Press the play button to start. The buttons either side reset and skip.</li>
+      <li>Under "Pomodoro" only: "Strict Mode" fails the run if you leave the app, and "Ambient Sound" plays background noise. Neither appears on "Timer" or "Stopwatch".</li>
+      <li>On the stopwatch, laps collect under "Lap History".</li>
+    </ol>
+    <p class="note">Starting a focus session from a task — the "Start Focus" button on any task — ties the session to that task, so the time shows up in Insights against it.</p>
 
     <h3>Insights</h3>
-    <p>Focused time all-time and over the last week, how accurate your time estimates are, the spread across Eisenhower quadrants, and a 60-day completion heat map.</p>
-
-
+    <p>What actually happened: focused time, how good your estimates were, the spread across Eisenhower quadrants, and a 60-day completion heat map.</p>
+    <ol>
+      <li>Open More, then Insights &amp; Analytics.</li>
+      <li>Read the estimate accuracy figure to see whether you routinely under-estimate work.</li>
+      <li>Use the quadrant spread to check you are not living entirely in urgent-and-important.</li>
+      <li>The heat map shows which days you completed anything at all.</li>
+    </ol>
+    <p class="note">Everything here is computed on the device from your own history. Nothing is uploaded, and there is nothing to switch on.</p>
 
     <h3>More</h3>
-    <p>The menu: Settings, Habits, Insights, Saved Places, Events, Notes, Evening Triage, Weekly Review, plus switches for Aggressive AI Memory and Driving Mode, the guide and the privacy policy.</p>
-
+    <p>The directory of everything that is not a tab.</p>
+    <ol>
+      <li>The first row is RoutineArc Unlimited — the subscription and the one-time unlock.</li>
+      <li>Workspace holds Habits, Insights &amp; Analytics, Saved Places, All Events, Notes &amp; Ideas, Evening Triage and Weekly Review.</li>
+      <li>System holds the AI memory switch, Driving Mode, Settings, this guide and the privacy policy.</li>
+    </ol>
 
 
     <h3>Task detail</h3>
-    <p>Everything about one task: priority and quadrant, due date, estimated length, energy level and MIT, repeat, location with saved places and navigation, notes, work flag, tags, subtasks (including AI-suggested ones), who it is delegated to, and an attached picture.</p>
-
-
+    <p>Everything about one task. It is the longest screen in the app, so it is grouped into labelled sections you can skip past.</p>
+    <ol>
+      <li>PRIORITY sets P1 to P4, and moves the "Urgent" and "Important" switches under EISENHOWER QUADRANT to match. Those switches can be set on their own, but doing so leaves the P number where it was.</li>
+      <li>Turn on "Eat That Frog" to pin this task to the top of today as your most important one.</li>
+      <li>COMPLETE BY sets the due date. Turn on "Include Time" if the hour matters; leave it off for a whole day.</li>
+      <li>ENERGY &amp; FOCUS records how long you think it will take and how much energy it needs, which is what "Plan my day" schedules around.</li>
+      <li>REPEAT makes it recur. Choose a preset, or "Every" a custom number of days, weeks or months.</li>
+      <li>LOCATION takes a place. Tap "Use my current location", or "Manage saved places" to pick one you have saved, then "Navigate" to open it in Maps.</li>
+      <li>SUBTASKS breaks the job up. Type into "Add subtask...", or tap "Suggest subtasks with AI" to have them drafted for you.</li>
+      <li>CUSTOM TAGS, DELEGATED TO and PICTURE ATTACHMENT cover the rest: your own labels, who owns it, and a photo.</li>
+      <li>Tap "Save" to keep changes, "Start Focus" to work on it now, or "Delete Task" to remove it.</li>
+    </ol>
+    <p class="note">Setting a due date with a time, on a task with a location, is what produces a leave-by warning.</p>
+    <p class="note">"Suggest a priority with AI" reads the title and notes and proposes a quadrant. It never applies it without you.</p>
+    <p class="note">Nothing on this screen is required. A task with only a title is perfectly valid.</p>
 
     <h3>Settings</h3>
-    <p>Six tabs. AI: backend, per-feature switches, memory, places, work schedule, address lookup. Planner: day window, business rhythm, review times. Alerts: reminders, widget updates, status notification, sounds and vibration. Style: appearance, palette, compact layout. Permissions: shortcuts to iOS Settings. System: backup and restore, CSV imports, about and privacy.</p>
-
-
+    <p>Six tabs, reached from the gear on Today. The tab strip wraps onto two rows, so every tab is visible without scrolling sideways.</p>
+    <ol>
+      <li>AI: choose which model runs, switch individual AI features on and off, manage "AI Memory" and "Saved Places", set your work schedule, clear focus history, and turn on "Look up addresses" if you want network geocoding.</li>
+      <li>Planner: set "Day starts" and "Day ends", pick a business rhythm, and choose when the "Morning Review" and "Evening Review" prompts appear.</li>
+      <li>Alerts: "Local Reminders", "Background widget updates", "Live Activity", which puts the current block on the lock screen and Dynamic Island, and whether alerts make a sound or vibrate. Turning "Local Reminders" off stops every scheduled reminder — tasks, events, leave-by and the one about the free week ending. Focus timer alerts and Driving Mode have their own switches and are not affected.</li>
+      <li>Style: "Appearance", "Color Palette", "Text Size", "High Contrast", "Compact Layout" and "Animations".</li>
+      <li>Permissions: shortcuts straight to shortcuts to iOS Settings.</li>
+      <li>System: backup and restore, CSV imports, the on-device database, and the privacy policy.</li>
+    </ol>
+    <p class="note">"Look up addresses" is off by default. It is the one setting that sends anything over the network, and the screen says exactly what it sends.</p>
+    <p class="note">The unlock card is the first thing on the System tab and is expanded by default.</p>
 
     <h3>Habits</h3>
-    <p>Daily or specific-weekday habits with streaks, a 28-day grid and a completion rate. Tap to check one off.</p>
-
+    <p>Daily or specific-weekday habits, with streaks, a 28-day grid and a completion rate.</p>
+    <ol>
+      <li>Open More, then Habits.</li>
+      <li>Type into "Habit name (e.g. Meditate)" and tap "Add habit".</li>
+      <li>Tap a habit to check it off for today. Tap again to undo.</li>
+      <li>The grid under each habit shows the last 28 days at a glance.</li>
+      <li>Tap "Delete habit" to remove one, along with its history.</li>
+    </ol>
 
 
     <h3>Triage, Weekly Review, Keep It Honest, On Deck</h3>
-    <p>The four backlog flows. Triage and Weekly Review are swipe decks; Keep It Honest forces a decision per task; On Deck shows one task with a timer.</p>
-
-
+    <p>Four ways to clear a backlog. Triage and Weekly Review are swipe decks — one task per card, decided with a gesture. Keep It Honest and On Deck use buttons.</p>
+    <ol>
+      <li>Evening Triage — for tasks whose due date has already passed; things due today are not in the deck. Swipe RIGHT for Rollover, which brings it forward to today, DOWN to Complete it, LEFT to Delete it.</li>
+      <li>Weekly Review — for the wider backlog. Swipe RIGHT to schedule it, LEFT to leave it where it is, DOWN to delete it.</li>
+      <li>Keep It Honest — asks what you will actually do with a stalled task. Choose "Do", "Defer", "Delegate" or "Delete".</li>
+      <li>On Deck — the one thing to do next. "Snooze" pushes it back, "Not now" skips it, and "Show passed tasks again" brings back the ones you skipped.</li>
+      <li>Every card in both decks also has buttons, so you never have to swipe if you would rather tap.</li>
+    </ol>
+    <p class="note">THE DECKS DO NOT AGREE, and it is worth knowing before you build a habit. Swiping LEFT deletes in Triage but only leaves the task alone in Weekly Review. Swiping DOWN completes in Triage but deletes in Weekly Review. Read the label on the card before you fling it.</p>
+    <p class="note">Both reviews are prompted at times you set under Settings → Planner.</p>
 
     <h3>AI Memory and Saved Places</h3>
-    <p>Memory lists what RoutineArc knows, grouped into places, people, preferences and patterns, all editable. Saved Places stores addresses with an arrival buffer and a home or work role.</p>
-
-
+    <p>The two things the app remembers about you, both editable and both stored only on your device.</p>
+    <ol>
+      <li>AI Memory: open Settings → AI → AI Memory. Tap "New memory" to add a fact, or "Edit memory" to change one.</li>
+      <li>Turn on "Learn confident facts automatically" to let the app keep what it is sure about without asking.</li>
+      <li>When the app offers something it has noticed, "Remember this" keeps it and dismissing it does not.</li>
+      <li>Saved Places: tap "Place name", then "Address or Place", set "Arrival buffer in minutes", and tap "Save place".</li>
+      <li>A saved place can then be attached to any task or event by name instead of retyping the address.</li>
+    </ol>
+    <p class="note">The arrival buffer is how early you want to arrive. It is added to the drive time when a leave-by warning is worked out.</p>
+    <p class="note">Deleting a memory deletes it. There is no copy anywhere else.</p>
 
     <h3>Work Schedule</h3>
-    <p>Add, edit and repeat shifts, with a location and a horizon in months.</p>
-
-
+    <p>The hours you actually work, which the day planner treats as available and everything else as your own time.</p>
+    <ol>
+      <li>Open Settings → AI → Work Schedule, or tap "Edit work schedule" on the Calendar.</li>
+      <li>Add a shift with its "Date", "Time" and "Repeat".</li>
+      <li>Set "Location" for the shift, or leave it as "Anywhere".</li>
+      <li>Tap "Save Shift" to keep it. ("Save Location" belongs to the "+ New Location" form above it and only pins a place — it does not save the shift.)</li>
+    </ol>
+    <p class="note">Work hours are shaded on the Calendar, and "Schedule during work hours" on a task will only place it inside them.</p>
 
     <h3>Customize Home</h3>
-    <p>Reorder and toggle the Today sections, and choose the bottom tabs.</p>
-
+    <p>Which sections appear on Today, and in what order.</p>
+    <ol>
+      <li>Tap "Customize" at the bottom of Today.</li>
+      <li>Switch off any section you do not want to see.</li>
+      <li>Use the up and down arrows on each row to reorder what is left.</li>
+      <li>Tap "Close" — the layout saves as you change it.</li>
+    </ol>
 
 
     <h3>Quick Add</h3>
     <p>Where quick-add links land. RoutineArc has no Siri integration, but the Shortcuts app can open daypilot://quick-add-action?text=… to add something without opening the app. Shows what it understood and waits for you to confirm before anything is saved.</p>
-
+    <ol>
+      <li>The text comes from wherever you sent it, so there is nothing to type here.</li>
+      <li>Check the list of what it was read as — each row shows the title, the type and the date it picked.</li>
+      <li>Tap the add button at the bottom — it names how many it will save — or "Cancel" to discard. There is no editing on this screen: to change something, add it and then open it, or cancel and send different text.</li>
+    </ol>
 
 
     <h3>Onboarding and Privacy</h3>
-    <p>The three first-run slides, and the privacy policy explaining what stays on the device — which is everything.</p>
-
-
+    <p>The slides you swiped through on first launch, and the full privacy policy.</p>
+    <ol>
+      <li>Open More, then Privacy Policy, to read what leaves the device and when.</li>
+      <li>It names every case where anything leaves the device, and says what is sent in each.</li>
+    </ol>
+    <p class="note">There is no account anywhere in RoutineArc, so there is nothing to sign in to and nothing to delete from a server.</p>
 
     <h3>This guide</h3>
-    <p>Reachable from More → How to Use Guide. The Download PDF button produces this document as a file you can keep or print.</p>
-
+    <p>What you are reading. It ships inside the app, so it works offline.</p>
+    <ol>
+      <li>Open More, then How to Use Guide.</li>
+      <li>The first half answers "how do I…" for a specific job. The second half describes every screen.</li>
+      <li>Export it to PDF from the top of the screen if you would rather read it away from the phone.</li>
+    </ol>
 
   </section>
 
