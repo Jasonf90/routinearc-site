@@ -45,7 +45,7 @@
   <header>
     <h1>Privacy Policy</h1>
     <p class="sub">RoutineArc is offline-first and privacy-first. This page describes everything the app does — and deliberately does not do — with your information.</p>
-    <p class="meta">Effective 2026-09-24 · Applies to the RoutineArc app for iPhone and iPad</p>
+    <p class="meta">Effective 2026-10-11 · Applies to the RoutineArc app for iPhone and iPad</p>
     <nav><a href="./index.html">Overview</a><a href="./guide.html">User guide</a></nav>
   </header>
 
@@ -53,52 +53,52 @@
     <h2>Your data stays on your device</h2>
     <p>RoutineArc stores every task, event, and note in an on-device SQLite database. There is no account and no cloud sync, and nothing you write is uploaded to us — we run no server to upload it to.</p>
     <p>Your content leaves the device only in the specific cases described below, and each one is either optional or something you start yourself: optional address lookup, dictation you explicitly allow Apple to transcribe, opening a map, exporting a backup, sharing a PDF you exported, and buying or restoring an unlock through the App Store.</p>
-    <p>Two other things reach Apple and carry none of your content: opening Apple's Terms of Use from the unlock screen, which loads a page in a browser, and the rating prompt iOS sometimes offers, whose outcome this app never sees.</p>
+    <p>These reach Apple too, and carry none of your content: the App Store's answer, on launch and on returning to the app, to whether this Apple Account holds an unlock and whether a subscription renewal is failing; opening Apple's Terms of Use from the unlock screen, which loads a page in a browser; Apple's Manage subscription sheet, from the unlock screen or the payment-issue banner on Today; and the rating prompt iOS sometimes offers, whose outcome this app never sees.</p>
   </section>
 
   <section>
     <h2>Microphone</h2>
-    <p>Microphone access is used solely to convert your speech into tasks, events, and notes while you are using voice capture. RoutineArc asks for on-device recognition through iOS's own speech framework, so your audio is not sent to us and normally does not leave your phone. If your device cannot recognise your language on-device, RoutineArc offers you a choice: decline and type it instead, or accept and let Apple transcribe that recording on its servers under Apple's privacy policy. Nothing is sent anywhere unless you accept, and the choice is per session, never remembered silently.</p>
+    <p>Microphone access is used solely to convert your speech into tasks, events, and notes while you are using voice capture. RoutineArc asks for on-device recognition through iOS's own speech framework, so your audio is not sent to us and normally does not leave your device. If your device cannot recognise your language on-device, RoutineArc offers you a choice: decline and type it instead, or accept and let Apple transcribe that recording on its servers under Apple's privacy policy. Nothing is sent anywhere unless you accept, and the choice is per session, never remembered silently.</p>
   </section>
 
   <section>
     <h2>Camera &amp; text scanning</h2>
-    <p>If you scan an image, the camera/photo access is used only to capture that image, and text recognition (OCR) runs entirely on-device via Apple's Vision framework. Images and recognized text are never uploaded. RoutineArc keeps no copy of a photo you only scan or describe; the photo picker's temporary copy is left in the app's cache, which the system clears when it needs space.</p>
+    <p>If you scan an image, the camera/photo access is used only to capture that image, and text recognition (OCR) runs entirely on-device via Apple's Vision framework. Images are never uploaded. The text read from them becomes your items, and with address lookup on, an address among them is looked up like one you type. RoutineArc keeps no copy of a photo you only scan; the photo picker's temporary copy is left in the app's cache, which the system clears when it needs space.</p>
     <p>A photo you attach to a task is kept with that task, on this device, and is included in the backups RoutineArc saves and the data you export. When you remove or replace the photo, or delete the task, RoutineArc deletes its copy the next time it starts. A backup saved before then still holds the photo until that backup is deleted.</p>
   </section>
 
   <section>
     <h2>Location</h2>
     <p>If you grant location access, RoutineArc uses it to estimate drive time to tasks and events that have a location. That estimate is computed entirely on your device — no routing or traffic service is contacted, and the position it reads is used for the calculation and then discarded.</p>
-    <p>Position is kept or sent in a few places, all of them things you tap. Saving a place with "use my current location" stores its coordinates with that place, on this device, so the drive-time estimate has something to measure to; deleting the place deletes them. Tapping the crosshair in a task or an event stores your position on that item in the same way. An event you gave an address to has that address looked up once, in the background, while address lookup is on, and the result is stored with the event. And address lookup itself, described next, can send a position off the device.</p>
-    <p>Looking up an address is a separate, optional feature. Apple's geocoder is network-backed, so enabling it sends the address you typed to the system geocoding service. Pinning "use my current location" sends your coordinates to the same system geocoder. Nothing is sent to any other company: an address the system geocoder cannot find simply does not resolve. It is OFF by default, and you can turn it on in Settings. Saved places store their coordinates once, so drive time keeps working with it off. Location is optional throughout.</p>
+    <p>Position is kept or sent in a few places, all of them things you tap. Tapping Navigate on a task or an event sends the item's location as written (a saved place's name) and its coordinates when it has them, to Apple Maps. Saving a place with "Pin Current Location" stores its coordinates with that place, on this device, so the drive-time estimate has something to measure to; deleting the place deletes them. Tapping the crosshair in a task or an event stores your position on that item in the same way. While address lookup is on, an event's address is looked up once, in the background, and the result is stored with the event, and a task's or event's address is looked up when you open it, if it has not been found yet. That includes an address dictated, read from a photo, filled in by Memory or imported, not only one you typed. With address lookup on, a saved place's address is looked up too, when you save the place in Saved Places or Work Schedule, or look it up again. And address lookup itself, described next, can send a position off the device.</p>
+    <p>Looking up an address is a separate, optional feature. Apple's geocoder is network-backed, so enabling it sends the address on a task or event, however it got there (typed, dictated, read from a photo, filled in by Memory or imported), and a saved place's address (from Saved Places or Work Schedule), to the system geocoding service. While it is on, "Pin Current Location" and the crosshair in a task or an event send your coordinates to the same system geocoder, to look up the address there. Nothing is sent to any other company: an address the system geocoder cannot find simply does not resolve. It is OFF by default, and you can turn it on under Settings → AI → Address lookup. Saved places store their coordinates once, so drive time keeps working with it off. Location is optional throughout.</p>
   </section>
 
   <section>
     <h2>On-device AI</h2>
-    <p>AI features run entirely on your device. Understanding what you type or say, summarising a note and suggesting subtasks use Apple Intelligence, which is built into iOS and runs on the device's Neural Engine; day planning and priority are ordinary arithmetic over your schedule rather than a model at all. There is no model to download and nothing to sign in to, and your content is never sent to a server for processing. If Apple Intelligence is unavailable, a deterministic rules engine takes over and also runs entirely on-device.</p>
+    <p>AI features run entirely on your device. Understanding what you type or say, summarising a note and suggesting subtasks use Apple Intelligence, which is built into iOS and runs on the device's Neural Engine; day planning and priority are ordinary arithmetic over your schedule rather than a model at all. There is no model to download and nothing to sign in to, and no AI feature sends your content to a server. If Apple Intelligence is unavailable, a deterministic rules engine takes over and also runs entirely on-device.</p>
   </section>
 
   <section>
     <h2>No third-party analytics</h2>
-    <p>RoutineArc adds no analytics, tracking, or crash reporting, and embeds no third-party advertising or analytics SDKs. The system frameworks it uses — Vision for text recognition, Core Location for location, and Apple Intelligence for AI — are part of iOS and are governed by Apple’s own privacy policy. We do not receive any data from them.</p>
+    <p>RoutineArc adds no analytics, tracking, or crash reporting, and embeds no third-party advertising or analytics SDKs. The system frameworks it uses — Vision for text recognition, Core Location for location, and Apple Intelligence for AI where the device has it — are part of iOS and are governed by Apple’s own privacy policy. We do not receive any data from them.</p>
   </section>
 
   <section>
     <h2>Buying and restoring</h2>
     <p>RoutineArc is free for seven days, after which capturing or changing items needs a monthly or yearly subscription, an Essentials unlock, or the lifetime unlock. Purchases go through the App Store, so your payment details are handled entirely by Apple and are never seen by this app.</p>
     <p>What RoutineArc learns is one thing: whether the Apple Account on this device holds an unlock. Not your name, not your Apple Account address, not a payment method, and not what else you have bought. That check runs on the device itself — there is still no RoutineArc account and no server of ours involved.</p>
-    <p>The seven days are counted from whichever is earlier: the date the App Store records for your first download, or the first time you opened the app. The first is read through the App Store, which a new install may have to ask once; the second is purely local. Neither is stored anywhere but this device.</p>
+    <p>The seven days are counted from whichever is earlier: the date the App Store records for your first download, or the first time you opened the app. The first is read through the App Store, which a new install may have to ask once; the second is purely local. RoutineArc keeps neither anywhere but this device.</p>
   </section>
 
   <section>
     <h2>Notifications</h2>
-    <p>Reminder notifications are scheduled locally on your device. No notification content leaves your phone.</p>
+    <p>Reminder notifications are scheduled locally on your device. No notification content leaves your device.</p>
   </section>
 
   <section>
     <h2>Export is in your hands</h2>
-    <p>Data leaves in bulk only when you send it: Export data in Settings hands a JSON copy to the app you choose via the iOS share sheet, and each saved backup has its own Share button that does the same with that snapshot. Nothing is sent anywhere you did not pick.</p>
+    <p>Data leaves in bulk only when you send it: Export data, under Settings → System → Backup &amp; Restore, hands a JSON copy to the app you choose via the iOS share sheet, and each saved backup has its own Share button that does the same with that snapshot. Nothing is sent anywhere you did not pick.</p>
   </section>
 
   <section>
