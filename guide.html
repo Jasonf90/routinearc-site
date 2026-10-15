@@ -122,7 +122,7 @@
 
 
     <h3>Work in a focus session</h3>
-    <p>Three timers. When you start focus from a task, the time you actually spend is recorded so Insights can show it back to you. A run on the Focus tab without a task is not recorded.</p>
+    <p>Three timers. When you start focus, the time you actually spend is recorded so Insights can show it back to you.</p>
     <ol>
       <li>Open the Focus tab and pick Pomodoro, Timer or Stopwatch.</li>
       <li>Or start focus straight from a task, which preloads a sensible length.</li>
@@ -169,7 +169,7 @@
       <li>Use "Tell it something" to add a fact yourself.</li>
       <li>Turn "Learn facts automatically" off in Settings → AI → AI Features if you would rather confirm each one: a card on Today asks before anything is saved.</li>
     </ol>
-    <p class="note">Memory is stored only on your device, and you can delete any fact at any time. With address lookup on, an address it fills into a task or event is looked up like one you type.</p>
+    <p class="note">Memory is stored on your device, and in your own iCloud if you turn on sync, and you can delete any fact at any time. With address lookup on, an address it fills into a task or event is looked up like one you type.</p>
 
     <h3>Choose the AI backend</h3>
     <p>Two options, and both run entirely on your device.</p>
@@ -202,9 +202,9 @@
     <h3>Try RoutineArc, then unlock it</h3>
     <p>RoutineArc is free to use for seven days. After that it keeps everything you already have and stops accepting new items, and editing existing ones until you unlock it.</p>
     <ol>
-      <li>Use it normally for the first seven days — nothing to sign up for, and no card. Automatic daily backups come with monthly, yearly and the lifetime unlock; backing up by hand, restoring, sharing and deleting are free for good.</li>
+      <li>Use it normally for the first seven days — nothing to sign up for, and no card. Automatic daily backups and sync across your devices with iCloud come with monthly, yearly and the lifetime unlock; backing up by hand, restoring, sharing and deleting are free for good.</li>
       <li>Three ways in, whenever you like: the row at the top of Today, the first row of More, or the RoutineArc Unlimited card at the top of Settings → System.</li>
-      <li>Four ways to pay: a monthly or yearly subscription, the one-time Essentials unlock, or the one-time lifetime unlock. Monthly, yearly and lifetime also turn on the automatic daily backup; Essentials does not.</li>
+      <li>Four ways to pay: a monthly or yearly subscription, the one-time Essentials unlock, or the one-time lifetime unlock. Monthly, yearly and lifetime also turn on the automatic daily backup and let you sync across your devices with iCloud; Essentials does not.</li>
       <li>On a new iPhone or iPad, tap Restore purchases — the unlock follows your Apple Account, not the device.</li>
       <li>When the week ends, RoutineArc explains what changed once, and never asks again.</li>
     </ol>
@@ -219,6 +219,22 @@
       <li>The Batch Imports &amp; Templates card downloads CSV templates for tasks, events, work schedule and rhythms, and imports a filled-in CSV.</li>
     </ol>
     <p class="note">Restoring replaces tasks, events, notes, the work schedule and rhythm profiles. It is not a merge.</p>
+    <p class="note">On a device that syncs, what you restore replaces what your other devices have too, as each of them syncs. Something another device deleted after the backup was made may stay deleted.</p>
+
+    <h3>Sync across your devices</h3>
+    <p>With RoutineArc Unlimited, your tasks, events, notes and the rest can be the same on each of your devices, through your own iCloud.</p>
+    <ol>
+      <li>Sign in to iCloud with the same Apple Account on each device.</li>
+      <li>On each device, open Settings → System → Sync Across Devices and turn on "Sync with iCloud".</li>
+      <li>Changes go across when you open RoutineArc, when you come back to it, and shortly after you change something. The card says when this device last synced.</li>
+      <li>iCloud usually tells RoutineArc when another of your devices sends a change, and RoutineArc fetches it at once, even in the background, as long as iOS has not closed it.</li>
+      <li>While RoutineArc is open it also looks for changes from your other devices about every ten seconds, and as you leave it, it tries to send anything that has not gone yet.</li>
+    </ol>
+    <p class="note">Settings, task photos and business rhythm duties stay on the device where you made them. To use the same business rhythm and work schedule on every device, turn on "Sync business rhythm and work schedule" in the same card.</p>
+    <p class="note">If two devices change the same item, the later change is kept. A delete wins over an edit to the same item, even a later one.</p>
+    <p class="note">Before the first sync on a device, and before a sync that replaces a lot, RoutineArc saves a copy of what is on that device in Backup &amp; Restore.</p>
+    <p class="note">Your data is encrypted on its way to iCloud and while it is stored there, and only your Apple Account can open it.</p>
+    <p class="note">With sync on, Handoff lets another of your devices nearby pick up the task, event or note you have open: on iPhone it appears in the App Switcher, and on iPad in the Dock. Both devices need "Sync with iCloud" on, and Handoff turned on in the Settings app. It tells the other device which item, never what it says. If the item has not reached that device yet, RoutineArc looks again for a few seconds, then says so.</p>
 
     <h3>Change what you see</h3>
     <p>Both the Today screen and the bottom tab bar are yours to arrange.</p>
@@ -304,7 +320,7 @@
       <li>Under "Pomodoro" only: "Strict Mode" fails the run if you leave the app, and "Ambient Sound" plays background noise. Neither appears on "Timer" or "Stopwatch".</li>
       <li>On the stopwatch, laps collect under "Lap History".</li>
     </ol>
-    <p class="note">Focus time is recorded only when focus starts from a task — the "Start Focus" button on any task, or its Focus chip — which ties the session to that task, so the time shows up in Insights against it. A run on the Focus tab without a task is not recorded.</p>
+    <p class="note">Focus time is recorded when focus starts from a task — the "Start Focus" button on any task, or its Focus chip — which ties the session to that task.</p>
 
     <h3>Insights</h3>
     <p>What actually happened: focused time, how good your estimates were, the spread across Eisenhower quadrants, and a 60-day completion heat map.</p>
@@ -314,7 +330,7 @@
       <li>Use the quadrant spread to check you are not living entirely in urgent-and-important.</li>
       <li>The heat map shows which days you completed anything at all.</li>
     </ol>
-    <p class="note">Everything here is computed on the device from your own history. Nothing is uploaded, and there is nothing to switch on.</p>
+    <p class="note">Everything here is computed on the device from your own history. There is nothing to switch on.</p>
 
     <h3>More</h3>
     <p>The directory of everything that is not a tab.</p>
@@ -347,12 +363,13 @@
     <p>Six tabs, reached from the gear on Today. The tab strip wraps onto a second row when it needs to, so every tab is visible without scrolling sideways. On each tab the settings are grouped into cards, and a card opens when you tap its heading; only the unlock card starts open.</p>
     <ol>
       <li>AI: "AI Backend" picks what reads what you type, and "AI Features" switches individual features on and off. "Data &amp; Memory" leads to "Memory", "Saved Places" and "Work Schedule", and clears focus history. "Address lookup" holds "Look up addresses", for network geocoding.</li>
-      <li>Planner: "Day Window" sets "Day starts" and "Day ends", "Business Rhythm" picks a rhythm, and "Reviews" chooses when the "Morning Review" and "Evening Review" prompts appear.</li>
+      <li>Planner: "Day Window" sets "Day starts" and "Day ends", "Business Rhythm" picks the rhythms you work to (you can pick more than one), and "Reviews" chooses when the "Morning Review" and "Evening Review" prompts appear.</li>
       <li>Alerts: "Notifications" holds "Local Reminders", "Background widget updates" and "Live Activity" on iPhone, which puts the current block on the Lock Screen and, where the iPhone has one, the Dynamic Island; "Sounds &amp; Vibration" sets whether alerts make a sound or vibrate. Turning "Local Reminders" off stops every scheduled reminder — tasks, events, leave-by and the one about the free week ending. Focus timer alerts have their own switches and are not affected.</li>
       <li>Style: "High Contrast" under "Accessibility", "Appearance", "Animations" under "Motion", "Text Size", "Color Palette", and "Compact Layout" under "Layout".</li>
       <li>Permissions: shortcuts to iOS Settings.</li>
-      <li>System: the unlock card, then "Backup &amp; Restore" (backups and the on-device database), "Batch Imports &amp; Templates" (CSV imports) and "About &amp; Privacy" (the privacy policy).</li>
+      <li>System: the unlock card, then "Sync Across Devices" (iCloud sync, on a device that can sync), "Backup &amp; Restore" (backups and the on-device database), "Batch Imports &amp; Templates" (CSV imports) and "About &amp; Privacy" (the privacy policy).</li>
     </ol>
+    <p class="note">"Only on days I work", under "Business Rhythm", is on by default: with a work schedule, the rhythm's tasks show only on days that have a shift and go on your days off, and what you did not finish on your last shift comes back on your next one. Turn it off to see them every day.</p>
     <p class="note">"Look up addresses" is off by default, and the screen says what it sends over the network.</p>
     <p class="note">The unlock card is the first thing on the System tab and is expanded by default.</p>
 
@@ -381,7 +398,7 @@
     <p class="note">Both reviews are prompted at times you set under Settings → Planner → Reviews.</p>
 
     <h3>Memory and Saved Places</h3>
-    <p>The two things the app remembers about you, both editable and both stored only on your device.</p>
+    <p>The two things the app remembers about you, both editable and both stored on your device, and in your own iCloud if you turn on sync.</p>
     <ol>
       <li>Memory: open Settings → AI → Data &amp; Memory → Memory. To add a fact, type it into the box under TELL IT SOMETHING and tap + beside it. Tap a fact in the list to change it.</li>
       <li>Turn on "Learn confident facts automatically" to let the app keep what it is sure about without asking.</li>
@@ -427,7 +444,7 @@
       <li>Open More, then Privacy Policy, to read what leaves the device and when.</li>
       <li>It names every case where anything leaves the device, and says what is sent in each.</li>
     </ol>
-    <p class="note">There is no account anywhere in RoutineArc, so there is nothing to sign in to and nothing to delete from a server.</p>
+    <p class="note">There is no RoutineArc account, so there is nothing to sign in to. With sync on, your data is in your own iCloud too: turning sync off leaves it there, and you remove it by deleting RoutineArc's data in your iCloud storage settings.</p>
 
     <h3>This guide</h3>
     <p>What you are reading. It ships inside the app, so it works offline.</p>
