@@ -132,6 +132,20 @@
       <li>Tap "Export to PDF" if you want it on paper.</li>
     </ol>
     <p class="note">A task with "Work Task" turned on in its edit form is only scheduled inside the hours in your work schedule.</p>
+    <p class="note">With Apple Calendar connected, a timed event in it is fixed and the plan works around it. An all-day event does not fill the day.</p>
+
+    <h3>Show your Apple Calendar events</h3>
+    <p>See the events in your Apple Calendar on Today, in the Calendar tab, in Plan my day and on the widgets. RoutineArc reads them on this device and never changes them.</p>
+    <ol>
+      <li>Open Settings → Planner → Apple Calendar and tap "Connect Apple Calendar". iOS asks whether RoutineArc may read your calendars.</li>
+      <li>Tap "Calendars" to choose which calendars show. They all show to start.</li>
+      <li>Tap an event from Apple Calendar to see it. To change it, tap "Open in Calendar" and change it in the Calendar app.</li>
+    </ol>
+    <p class="note">RoutineArc asks for access only when you tap "Connect Apple Calendar", here or on the first day. If you said no, the card says how to allow it in iOS Settings.</p>
+    <p class="note">The events are not copied into RoutineArc's data, its backups, Export data or iCloud sync, and RoutineArc sets no reminders for them.</p>
+    <p class="note">Declined invitations and cancelled events are left out.</p>
+    <p class="note">Which calendars you turned off is kept on this device, and iCloud sync does not carry it.</p>
+    <p class="note">To stop, turn off "Show Apple Calendar events" in the same card. It works on every plan, after the free week too.</p>
 
     <h3>Set priorities and pick the one that matters</h3>
     <p>RoutineArc uses the Eisenhower matrix: urgent and important, in four levels from P1 to P4.</p>
@@ -238,6 +252,7 @@
       <li>Use it normally for the first seven days — nothing to sign up for, and no card. Automatic daily backups and sync across your devices with iCloud come with monthly, yearly and the lifetime unlock; backing up by hand, restoring, sharing and deleting are free for good.</li>
       <li>Three ways in, whenever you like: the row at the top of Today, the first row of More, or the RoutineArc Unlimited card at the top of Settings → System.</li>
       <li>Four ways to pay: a monthly or yearly subscription, the one-time Essentials unlock, or the one-time lifetime unlock. Monthly, yearly and lifetime also turn on the automatic daily backup and let you sync across your devices with iCloud; Essentials does not.</li>
+      <li>The screen leads with the two plans, yearly and monthly; yearly also shows what it comes to each month. Essentials and the lifetime unlock are under "Pay once instead". Tap a plan to buy it.</li>
       <li>On a new iPhone or iPad, tap Restore purchases — the unlock follows your Apple Account, not the device.</li>
       <li>When the week ends, RoutineArc explains what changed once, and never asks again.</li>
     </ol>
@@ -321,6 +336,7 @@
     </ol>
     <p class="note">A red line marks the current time on the day view.</p>
     <p class="note">Events with a place show it under the title. Opening one gives you "Navigate", which opens the place in Maps.</p>
+    <p class="note">With Apple Calendar connected, its events are drawn in their calendar's colour. They cannot be dragged: tap one to see it.</p>
 
     <h3>Events</h3>
     <p>A plain list of every event, and the screen for editing one.</p>
@@ -370,9 +386,10 @@
     <ol>
       <li>The first row is RoutineArc Unlimited — the monthly and yearly subscriptions, the Essentials unlock and the lifetime unlock.</li>
       <li>Workspace holds Habits, Insights &amp; Analytics, Saved Places, All Events, Notes &amp; Ideas, Evening Triage and Weekly Review.</li>
-      <li>System holds the "Aggressive Memory" switch, Settings, this guide and the privacy policy.</li>
+      <li>System holds the "Aggressive Memory" switch, Settings, this guide, "Rate RoutineArc", "Email the developer" and the privacy policy.</li>
     </ol>
-
+    <p class="note">"Rate RoutineArc" opens the App Store's page for writing a review of RoutineArc.</p>
+    <p class="note">"Email the developer" opens your email app with a message addressed to the developer and the version of RoutineArc as its subject. RoutineArc adds nothing else to it and never sees it.</p>
 
     <h3>Task detail</h3>
     <p>Everything about one task. It is the longest screen in the app, so it is grouped into labelled sections you can skip past.</p>
@@ -396,7 +413,7 @@
     <p>Six tabs, reached from the gear on Today. The tab strip wraps onto a second row when it needs to, so every tab is visible without scrolling sideways. On each tab the settings are grouped into cards, and a card opens when you tap its heading; only the unlock card starts open.</p>
     <ol>
       <li>AI: "AI Backend" picks what reads what you type, and "AI Features" switches individual features on and off. "Data &amp; Memory" leads to "Memory", "Saved Places" and "Work Schedule", and clears focus history. "Address lookup" holds "Look up addresses", for network geocoding.</li>
-      <li>Planner: "Day Window" sets "Day starts" and "Day ends", "Business Rhythm" picks the rhythms you work to (you can pick more than one), and "Reviews" chooses when the "Morning Review" and "Evening Review" prompts appear.</li>
+      <li>Planner: "Apple Calendar" shows the events in your Apple Calendar, "Day Window" sets "Day starts" and "Day ends", "Business Rhythm" picks the rhythms you work to (you can pick more than one), and "Reviews" chooses when the "Morning Review" and "Evening Review" prompts appear.</li>
       <li>Alerts: "Notifications" holds "Local Reminders", "Background widget updates" and "Live Activity" on iPhone, which puts the current block on the Lock Screen and, where the iPhone has one, the Dynamic Island; "Sounds &amp; Vibration" sets whether alerts make a sound or vibrate. Turning "Local Reminders" off stops every scheduled reminder — tasks, events, leave-by and the one about the free week ending. Focus timer alerts have their own switches and are not affected.</li>
       <li>Style: "High Contrast" under "Accessibility", "Appearance", "Animations" under "Motion", "Text Size", "Color Palette", and "Compact Layout" under "Layout".</li>
       <li>Permissions: shortcuts to iOS Settings.</li>
@@ -472,11 +489,13 @@
 
 
     <h3>Onboarding and Privacy</h3>
-    <p>The slides you swiped through on first launch, and the full privacy policy.</p>
+    <p>The steps on first launch, which end on your day planned, and the full privacy policy.</p>
     <ol>
+      <li>On first launch, "What’s on today?" takes what you need to do, one thing on each line, and "What’s fixed?" what is at a set time. "Your day" then shows them planned.</li>
       <li>Open More, then Privacy Policy, to read what leaves the device and when.</li>
       <li>It names every case where anything leaves the device, and says what is sent in each.</li>
     </ol>
+    <p class="note">During the free week, "Next" on the last step opens the plans over Today. "Start my free week" closes them without buying anything. "Skip" goes straight to Today.</p>
     <p class="note">There is no RoutineArc account, so there is nothing to sign in to. With sync on, your data is in your own iCloud too: turning sync off leaves it there, and you remove it by deleting RoutineArc's data in your iCloud storage settings.</p>
 
     <h3>This guide</h3>
